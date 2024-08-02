@@ -7,6 +7,7 @@
     font-family: "Robotto", sans-serif;
     display: flex;
     padding: 1rem;
+    margin-left: 10px;
     width: 815px;
     height: 68px;
     font-size: 24px;
@@ -16,7 +17,7 @@
     border-bottom: black 1px solid;
 }
 
-.body-father {
+.body_father {
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -44,7 +45,7 @@
     border: black 1px solid;
 }
 
-.input-mensagem {
+.input_mensagem {
     margin: 10px;
     width: 500px;
     height: 150px;
@@ -54,12 +55,12 @@
     top: 0;
 }
 
-.input-mensagem::placeholder {
+.input_mensagem::placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
 }
 
-.btn-enviar {
+.btn_enviar {
     width: 79px;
     height: 36px;
     margin-top: 10px;
@@ -71,7 +72,51 @@
     border: 1px solid transparent;
 }
 
-.btn-enviar:hover {
+.btn_enviar:hover {
     border: 1px solid black;
     cursor: pointer;
+}
+
+/*------JAVASCRIPT---------*/
+.container {
+    min-height: 410px;
+    max-height: 410px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.caixa_mensagem {
+    min-height: fit-content;
+    width: 770px;
+    margin: 10px 20px 0px 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: anywhere;
+    border-radius: 5px;
+}
+
+.editar_excluir {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0px 21px 10px;
+}
+
+.editar_excluir:hover {
+    cursor: pointer;
+}
+
+.botao_editar {
+    font-size: 14px;
+    padding: 5px;
+    background-color: #F6A75D;
+}
+
+.botao_excluir {
+    font-size: 14px;
+    padding: 5px;
+    background: #F65D5D;
 }
