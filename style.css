@@ -1,0 +1,77 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.title {
+    font-family: "Robotto", sans-serif;
+    display: flex;
+    padding: 1rem;
+    width: 815px;
+    height: 68px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    background-color: #C4C4C4;
+    border-bottom: black 1px solid;
+}
+
+.body-father {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 817px;
+    height: 664px;
+    background-color: #ffffff;
+    border: black 1px solid;
+}
+
+.formulario {
+    display: flex;
+    justify-content: start;
+
+    margin-top: auto;
+    width: 609px;
+    height: 170px;
+    background-color: #C4C4C4;
+    border: black 1px solid;
+}
+
+.input-mensagem {
+    margin: 10px;
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+    top: 0;
+}
+
+.input-mensagem::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.btn-enviar {
+    width: 79px;
+    height: 36px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.btn-enviar:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
